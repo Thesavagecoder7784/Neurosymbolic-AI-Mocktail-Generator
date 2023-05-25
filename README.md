@@ -15,6 +15,6 @@ It's important to note that the data and code for the project are only available
 Overall, this project combines the strengths of symbolic reasoning and machine learning to generate personalized mocktail recipes that are tailored to the user's taste preferences.
 
 Dataset
-The Neurosymbolic AI Mocktail Generator uses a dataset of mocktail recipes and user ratings to generate new combinations. The dataset is sourced from [insert dataset source here] and includes [insert dataset details here].
+The Neurosymbolic AI Mocktail Generator uses a dataset of mocktail recipes and user ratings to generate new combinations. The dataset is sourced from ChatGPT
 
 
