@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mocktail Recommendation</title>
+</head>
+<body>
+    <h1>Your Mocktail Recommendation</h1>
+    <ul>
+        {% for ingredient in mocktail %}
+            <li>{{ ingredient }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back to home</a>
+</body>
+</html>

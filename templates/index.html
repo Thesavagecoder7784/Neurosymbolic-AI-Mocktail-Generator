@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mocktail Selector</title>
+</head>
+<body>
+    <h1>Mocktail Selector</h1>
+    <form action="/recommend" method="post">
+        <label for="flavor_1">First flavor profile:</label>
+        <select id="flavor_1" name="flavor_1">
+            {% for flavor in flavors %}
+                <option value="{{ flavor }}">{{ flavor }}</option>
+            {% endfor %}
+        </select><br><br>
+        
+        <label for="flavor_2">Second flavor profile (optional):</label>
+        <select id="flavor_2" name="flavor_2">
+            <option value="">None</option>
+            {% for flavor in flavors %}
+                <option value="{{ flavor }}">{{ flavor }}</option>
+            {% endfor %}
+        </select><br><br>
+        
+        <label for="no_ing">Any ingredients you don't want:</label>
+        <input type="text" id="no_ing" name="no_ing"><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
